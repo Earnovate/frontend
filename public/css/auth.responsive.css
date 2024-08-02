@@ -1,0 +1,36 @@
+@media only screen and (min-width: 1000px) {
+  .formSection {
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+  }
+
+  .formLeft {
+    background-color: var(--color-white);
+    display: grid;
+    place-content: center;
+  }
+
+  .formRight {
+    display: initial;
+    background-color: var(--color-green-50);
+  }
+
+  /* Google Button */
+  .googleButton {
+    width: 100%;
+  }
+
+  .loginHeader img {
+    display: none;
+  }
+
+  /* Form */
+  form {
+    max-width: 25em;
+  }
+
+  /* Login Header */
+  .loginHeader {
+    max-width: 25em;
+  }
+}

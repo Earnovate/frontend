@@ -1,0 +1,163 @@
+@import url("./fonts.css");
+@import url("./colors.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--color-grey);
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.formLeft {
+  padding: 2em 2em;
+  min-height: 100dvh;
+  background-color: var(--color-green-50);
+}
+
+/* Login Header */
+.loginHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 3em;
+  max-width: 30em;
+}
+.loginHeader img {
+  width: 16em;
+}
+
+.titleWrapper {
+  text-align: center;
+}
+.titleWrapper h1 {
+  font-weight: 800;
+  font-size: 1.6em;
+  color: var(--color-green-950);
+  margin-bottom: 0.5em;
+}
+.titleWrapper p {
+  font-size: 0.7em;
+  color: var(--color-green-950);
+}
+
+/* Google Button */
+.googleButton {
+  font-weight: 600;
+  margin: 0 auto;
+  max-width: 18.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.8em;
+  cursor: pointer;
+  margin-bottom: 2em;
+  border-radius: 0.4em;
+}
+
+/* or Text */
+.orText {
+  font-weight: bold;
+  color: var(--color-green-700);
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 17em;
+  width: 17em;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+.orText::before,
+.orText::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px dashed rgba(0, 0, 0, 0.1);
+  margin: 0 10px;
+}
+
+/* Form */
+form {
+  max-width: 30em;
+  margin: 0 auto;
+}
+form .formGroup {
+  margin-bottom: 1em;
+}
+form .formGroup label {
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
+form .formGroup input {
+  background-color: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  padding: 1.3em;
+  border-radius: 1.7em;
+  display: block;
+  width: 100%;
+}
+
+/* Remember Me Container */
+.rememberMeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+.rememberMeContainer input {
+  margin-right: 0.5em;
+  accent-color: var(--color-green-500);
+}
+.rememberMeContainer a {
+  font-weight: bold;
+  color: var(--color-green-600);
+  text-decoration: none;
+}
+
+/* Login Button */
+.loginButton {
+  font-weight: 800;
+  color: var(--color-white);
+  width: 100%;
+  padding: 1.3em 1em;
+  border-radius: 0.5em;
+  outline: none;
+  border: none;
+  background-color: var(--color-green-700);
+  cursor: pointer;
+  margin-bottom: 0.7em;
+}
+
+/* Create Account */
+.createAccountWrapper {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+}
+.createAccountWrapper a {
+  font-weight: bold;
+  color: var(--color-green-600);
+  text-decoration: none;
+}
+
+.formRight {
+  text-align: center;
+  color: var(--color-green-700);
+  display: grid;
+  place-content: end;
+  display: none;
+  padding: 4em;
+  background-image: url("../images/auth.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
