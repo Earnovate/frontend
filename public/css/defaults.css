@@ -1,0 +1,11 @@
+@import url("./colors.css");
+
+::-moz-selection {
+  color: var(--color-green-50);
+  background: var(--color-green-400);
+}
+
+::selection {
+  color: var(--color-green-50);
+  background: var(--color-green-400);
+}
